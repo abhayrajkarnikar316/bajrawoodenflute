@@ -1,0 +1,62 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root {
+  --primary: #8B5E3C;
+}
+
+body{font-family:Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;padding:20px;background:#fafafa;color:#222}
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background: #fafafa;
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+}
+header{text-align:center;margin-bottom:30px}
+header h1{font-size:2rem;margin-bottom:6px}
+header p{font-size:1rem;color:#666}
+h1 {
+  color: var(--primary);
+}
+
+.btn {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.hero{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:center;padding:20px;background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+.hero img{width:320px;max-width:100%;border-radius:8px}
+.cta h2{font-size:1.4rem;margin-bottom:6px}
+.cta p{margin-bottom:10px}
+.btn{display:inline-block;padding:10px 16px;text-decoration:none;border:2px solid #111;border-radius:6px;font-weight:500;color:#111;transition:.2s}
+.btn:hover{background:#111;color:#fff}
+
+.contact{margin-top:30px;text-align:center}
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
